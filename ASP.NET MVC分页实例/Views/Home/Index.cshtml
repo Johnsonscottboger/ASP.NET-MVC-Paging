@@ -1,0 +1,10 @@
+﻿@model ASP.NET_MVC分页实例.PagingInfo
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>ASP.NET 分页实例</h2>
+
+<div class="pages">
+    @Html.PageLinks(Model,x=>Url.Action("Index",new { page=x }))
+</div>
